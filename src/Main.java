@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         IntegerGenerator integerGenerator = new IntegerGenerator();
@@ -13,7 +18,7 @@ public class Main {
         }
         BufferedReader bufferedReader = null;
         try {
-            bufferedReader = new BufferedReader(new FileReader("integerCash2.txt"));
+            bufferedReader = new BufferedReader(new FileReader("integerCash3.txt"));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -24,7 +29,7 @@ public class Main {
             } else {
                 bufferedReader = null;
                 try {
-                    bufferedReader = new BufferedReader(new FileReader("integerCash2.txt"));
+                    bufferedReader = new BufferedReader(new FileReader("integerCash3.txt"));
                 } catch (Throwable e) {
                     e.printStackTrace();
                 }
